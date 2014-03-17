@@ -7,7 +7,7 @@ ig.module(
 	
 	'game.entities.player',
 	
-	'game.levels.untitled'
+	'game.levels.main'
 )
 .defines(function(){
 MyGame = ig.Game.extend({
@@ -37,10 +37,10 @@ font: new ig.Font( 'media/04b03.font.png' ),
 		
 		
 		// Add your own drawing code here
-	//	var x = ig.system.width/2,
-	//	y = ig.system.height/2;
+	var x = 30;
+	y = 1;
 	
-	//this.font.draw( 'hello world please', x, y, ig.Font.ALIGN.CENTER );
+	this.font.draw( 'hello world ', x, y, ig.Font.ALIGN.CENTER );
 	}
 });
 
